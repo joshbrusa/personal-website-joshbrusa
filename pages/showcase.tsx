@@ -1,7 +1,7 @@
 export default function () {
   return (
     <>
-      <div className=""></div>
+      <div className="">Showcase</div>
     </>
   );
 }
