@@ -1,4 +1,4 @@
-export default function Index() {
+export default function Page() {
   return (
     <>
       <div className=""></div>
