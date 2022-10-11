@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <div className="static flex h-screen items-center justify-center">
-        <Image src={background} layout="fill" objectFit="cover" />
+        <Image src={background} alt="" layout="fill" objectFit="cover" />
         <div className="absolute flex flex-col items-center">
           <div className="text-8xl font-sacramento">joshbrusa.com</div>
           <div className="text-2xl">
