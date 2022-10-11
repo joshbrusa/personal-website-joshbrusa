@@ -1,4 +1,4 @@
-export default function Index() {
+export default function () {
   return (
     <>
       <div className=""></div>
