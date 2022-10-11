@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function () {
+export default function Header() {
   return (
     <>
       <div className="flex items-center justify-around p-2 font-sacramento">
