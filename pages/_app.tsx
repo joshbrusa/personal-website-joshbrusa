@@ -5,10 +5,7 @@ import type { AppProps } from "next/app";
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
-      <div className="flex justify-center">
-        <Component {...pageProps} />
-      </div>
+      <Component {...pageProps} />
     </>
   );
 }
