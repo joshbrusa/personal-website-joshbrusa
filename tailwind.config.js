@@ -13,6 +13,9 @@ module.exports = {
       backgroundImage: {
         "index-background": "url('../public/background.jpg')",
       },
+      textDecorationColor: {
+        color: "#4C8C49",
+      },
     },
   },
   plugins: [],

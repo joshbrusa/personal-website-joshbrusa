@@ -8,3 +8,12 @@
 body {
   background-color: #d7d0c3;
 }
+
+@layer components {
+  .index-link {
+    @apply cursor-pointer text-6xl hover:line-through decoration-color decoration-4;
+  }
+  .header-link {
+    @apply cursor-pointer text-xl hover:line-through decoration-color decoration-2;
+  }
+}

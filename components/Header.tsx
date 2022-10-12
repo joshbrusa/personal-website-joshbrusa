@@ -4,19 +4,17 @@ export default function Header() {
   return (
     <>
       <div className="flex items-center justify-around p-2">
-        <div className="">
-          <Link href={"/"}>
-            <button className="text-4xl font-sacramento">joshbrusa.com</button>
-          </Link>
+        <div className="text-4xl font-sacramento cursor-pointer">
+          <Link href={"/"}>joshbrusa.com</Link>
         </div>
         <div className="flex">
-          <div className="cursor-pointer text-xl">
+          <div className="header-link">
             <Link href={"/about"}>About</Link>
           </div>
-          <div className="cursor-pointer ml-4 text-xl">
+          <div className="ml-4 header-link">
             <Link href={"/showcase"}>Showcase</Link>
           </div>
-          <div className="cursor-pointer ml-4 text-xl">
+          <div className="ml-4 header-link">
             <Link href={"/contact"}>Contact</Link>
           </div>
         </div>
