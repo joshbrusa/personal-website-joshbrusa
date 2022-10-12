@@ -16,6 +16,9 @@ export default function Header() {
           <div className="cursor-pointer ml-4 text-xl">
             <Link href={"/showcase"}>Showcase</Link>
           </div>
+          <div className="cursor-pointer ml-4 text-xl">
+            <Link href={"/contact"}>Contact</Link>
+          </div>
         </div>
       </div>
     </>

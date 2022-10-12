@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function page() {
+export default function Page() {
   return (
     <>
       <Head>

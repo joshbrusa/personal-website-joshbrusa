@@ -2,13 +2,15 @@ import "../styles/globals.css";
 import Header from "../components/Header";
 import type { AppProps } from "next/app";
 
-export default function app({ Component, pageProps, router }: AppProps) {
-  if (router.pathname === "/") return <Component {...pageProps} />;
-
+export default function App({ Component, pageProps, router }: AppProps) {
+  function header() {
+    if (router.pathname === "/") return;
+    return <Header />;
+  }
   return (
     <>
-      <Header />
-      <div className="flex justify-center">
+      {header()}
+      <div className="flex flex-col items-center">
         <Component {...pageProps} />
       </div>
     </>

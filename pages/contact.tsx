@@ -4,9 +4,9 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>Contact</title>
       </Head>
-      <div className="">About</div>
+      <div className="">Contact</div>
     </>
   );
 }
