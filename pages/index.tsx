@@ -1,10 +1,12 @@
+import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
-import background from "../public/background.jpg";
 
 export default function page() {
   return (
     <>
+      <Head>
+        <title>joshbrusa.com</title>
+      </Head>
       <div className="flex flex-col h-screen items-center justify-center bg-index-background bg-cover">
         <div className="text-8xl font-sacramento">joshbrusa.com</div>
         <div className="text-2xl">A portfolio website made by yours truly.</div>
