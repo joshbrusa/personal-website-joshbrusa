@@ -11,9 +11,18 @@ body {
 
 @layer components {
   .index-link {
-    @apply cursor-pointer text-6xl hover:line-through decoration-color decoration-4;
+    @apply text-6xl hover:line-through decoration-amber-900 decoration-4;
   }
   .header-link {
-    @apply cursor-pointer text-xl hover:line-through decoration-color decoration-2;
+    @apply text-xl hover:line-through decoration-amber-900 decoration-2;
+  }
+  .page-title {
+    @apply mt-2 text-4xl;
+  }
+  .page-header-1 {
+    @apply mt-2 text-2xl;
+  }
+  .page-header-2 {
+    @apply mt-2 text-xl indent-8;
   }
 }
