@@ -10,9 +10,6 @@ module.exports = {
         sans: ["Montserrat", "sans-serif"],
         sacramento: ["Sacramento", "cursive"],
       },
-      backgroundImage: {
-        "index-background": "url('../public/background.jpg')",
-      },
     },
   },
   plugins: [],
