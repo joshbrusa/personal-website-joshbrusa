@@ -11,7 +11,7 @@ body {
 
 @layer components {
   .index-link {
-    @apply text-6xl hover:line-through decoration-amber-900 decoration-4;
+    @apply text-4xl hover:line-through decoration-amber-900 decoration-4;
   }
   .header-link {
     @apply text-xl hover:line-through decoration-amber-900 decoration-2;
