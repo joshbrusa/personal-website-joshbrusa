@@ -7,7 +7,7 @@ export default function Page() {
       <Head>
         <title>joshbrusa.com</title>
       </Head>
-      <div className="flex flex-col h-screen w-screen items-center justify-center bg-index-background bg-cover">
+      <div className="flex flex-col h-screen w-screen items-center justify-center bg-index-background bg-no-repeat bg-cover bg-center bg-fixed">
         <div className="text-8xl font-sacramento">joshbrusa.com</div>
         <div className="text-2xl">A portfolio website made by yours truly.</div>
         <Link href={"/resume"}>
