@@ -8,7 +8,9 @@ export default function Page() {
         <title>joshbrusa.com</title>
       </Head>
       <div className="flex flex-col h-screen w-screen items-center justify-center bg-index-background bg-no-repeat bg-cover bg-center bg-fixed">
-        <div className="text-8xl font-sacramento">joshbrusa.com</div>
+        <div className="text-8xl font-sacramento break-words">
+          joshbrusa.com
+        </div>
         <div className="text-2xl">A portfolio website made by yours truly.</div>
         <Link href={"/resume"}>
           <a className="mt-20 index-link">Resume</a>
