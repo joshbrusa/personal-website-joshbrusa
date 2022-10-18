@@ -37,7 +37,7 @@ export default function Header() {
         <div className="md:flex hidden">{headerLinks}</div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden flex w-10 h-10"
+          className="md:hidden block w-10 h-10"
         >
           <Bars3BottomRightIcon />
         </button>
