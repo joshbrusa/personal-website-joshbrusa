@@ -1,23 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
-
 body {
-  background-color: #d7d0c3;
+  background-color: #fdfdfc;
 }
 
 @layer components {
-  .index-link {
-    @apply text-4xl hover:line-through decoration-amber-900 decoration-4;
+  .header-logo {
+    @apply p-1 text-4xl font-LuckiestGuy text-theme hover:underline;
   }
   .header-link {
-    @apply text-xl hover:line-through decoration-amber-900 decoration-2;
+    @apply p-2 text-xl hover:underline;
   }
   .page-title {
-    @apply mt-2 text-4xl;
+    @apply text-4xl;
   }
   .page-header-1 {
     @apply mt-2 text-2xl;

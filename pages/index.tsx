@@ -6,7 +6,7 @@ export default function Page() {
       <Head>
         <title>joshbrusa.com</title>
       </Head>
-      <div className="page-title">A portfolio website made by yours truly.</div>
+      <div className="page-title">Hello!</div>
     </>
   );
 }

@@ -7,9 +7,9 @@ export default function App({ Component, pageProps, router }: AppProps) {
     <>
       <Header />
       <div className="flex flex-col items-center">
-        <div className="p-2 max-w-6xl">
+        <main className="p-2 max-w-6xl overflow-auto">
           <Component {...pageProps} />
-        </div>
+        </main>
       </div>
     </>
   );

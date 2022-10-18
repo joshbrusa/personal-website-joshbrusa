@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
-        sacramento: ["Sacramento", "cursive"],
+        LuckiestGuy: ["Luckiest Guy", "cursive"],
+      },
+      colors: {
+        theme: "#ff4040",
       },
     },
   },
