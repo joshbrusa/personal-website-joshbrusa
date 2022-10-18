@@ -11,7 +11,7 @@ body {
 
 @layer components {
   .header-logo {
-    @apply mt-3 text-4xl font-LuckiestGuy text-theme hover:underline;
+    @apply p-2 mt-3 text-4xl font-LuckiestGuy text-theme hover:underline;
   }
   .header-link {
     @apply p-2 text-xl hover:underline;
