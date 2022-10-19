@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +11,7 @@ body {
 
 @layer components {
   .header-logo {
-    @apply p-2 mt-3 text-4xl font-LuckiestGuy text-theme hover:underline;
+    @apply p-2 text-4xl font-Bangers text-theme hover:underline;
   }
   .header-link {
     @apply p-2 text-xl hover:underline;

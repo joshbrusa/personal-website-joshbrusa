@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
-        LuckiestGuy: ["Luckiest Guy", "cursive"],
+        Bangers: ["Bangers", "cursive"],
       },
       colors: {
         theme: "#ff4040",
