@@ -7,7 +7,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
     <>
       <Header />
       <div className="flex flex-col items-center">
-        <main className="p-2 max-w-6xl">
+        <main className="flex flex-col items-center p-2 max-w-6xl">
           <Component {...pageProps} />
         </main>
       </div>
