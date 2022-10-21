@@ -5,11 +5,13 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <>
-      <Header />
-      <div className="flex flex-col items-center">
-        <main className="flex flex-col items-center p-2 max-w-6xl">
-          <Component {...pageProps} />
-        </main>
+      <div className="flex justify-center">
+        <div className="flex flex-col w-full max-w-6xl">
+          <Header />
+          <main className="p-2">
+            <Component {...pageProps} />
+          </main>
+        </div>
       </div>
     </>
   );
