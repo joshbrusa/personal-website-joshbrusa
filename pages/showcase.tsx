@@ -6,7 +6,7 @@ export default function Page() {
       <Head>
         <title>Showcase</title>
       </Head>
-      <div className="">Showcase</div>
+      <div className="page-title">Showcase</div>
     </>
   );
 }

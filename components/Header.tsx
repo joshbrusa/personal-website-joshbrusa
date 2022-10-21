@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
 
 export default function Header() {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [router.pathname]);
 
   const links = [
     {
