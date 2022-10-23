@@ -24,9 +24,9 @@ export default function Header() {
           setProjectsOpen(false);
         }}
       >
-        <div className="flex items-center justify-between shadow-lg rounded-lg">
+        <div className="p-2 flex items-center justify-between shadow-lg rounded-lg">
           <Link href={"/"}>
-            <a className="m-2 text-5xl font-Bangers text-theme hover:underline">
+            <a className="m-2 text-4xl font-Bangers text-theme hover:underline">
               Josh Brusa
             </a>
           </Link>
@@ -38,7 +38,7 @@ export default function Header() {
 
         <div className="mt-2 flex justify-end">
           <div
-            className={`absolute flex flex-col justify-end w-60 shadow-lg rounded-lg bg-bg ${
+            className={`p-2 absolute flex flex-col justify-end w-60 shadow-lg rounded-lg bg-bg ${
               menuOpen ? null : "hidden"
             }`}
           >
