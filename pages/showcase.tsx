@@ -7,6 +7,7 @@ export default function Page() {
         <title>Showcase</title>
       </Head>
       <div className="page-title">Showcase</div>
+      <div className="mt-2">Being built...</div>
     </>
   );
 }

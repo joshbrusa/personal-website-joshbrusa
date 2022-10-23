@@ -13,32 +13,34 @@ export default function Header() {
 
   const links = [
     {
-      url: "/resume",
-      label: "Resume",
-    },
-    {
       url: "/showcase",
       label: "Showcase",
+    },
+    {
+      url: "/contact",
+      label: "Contact",
     },
   ];
 
   const headerLinks = links.map((item, index) => (
     <Link key={index} href={item.url}>
-      <a className="header-link">{item.label}</a>
+      <a className="m-2 text-lg font-bold hover:underline">{item.label}</a>
     </Link>
   ));
 
   const menuLinks = links.map((item, index) => (
     <Link key={index} href={item.url}>
-      <a className="header-link">{item.label}</a>
+      <a className="m-2 text-lg font-bold hover:underline">{item.label}</a>
     </Link>
   ));
 
   return (
     <>
-      <div className="flex items-center justify-between p-2">
+      <div className="flex items-center justify-between">
         <Link href={"/"}>
-          <a className="header-logo">Josh Brusa</a>
+          <a className="text-5xl font-Bangers text-theme hover:underline">
+            Josh Brusa
+          </a>
         </Link>
 
         <div className="md:flex hidden">{headerLinks}</div>

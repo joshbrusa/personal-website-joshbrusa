@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Montserrat", "sans-serif"],
         Bangers: ["Bangers", "cursive"],
       },
       colors: {
+        "theme-bg": "#fdfdfc",
         theme: "#ff4040",
       },
     },

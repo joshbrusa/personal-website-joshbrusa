@@ -1,31 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #fdfdfc;
-}
-
 @layer components {
-  .header-logo {
-    @apply p-2 text-4xl font-Bangers text-theme hover:underline;
-  }
-  .header-link {
-    @apply p-2 text-xl font-semibold hover:underline;
-  }
   .page-title {
-    @apply text-4xl font-semibold;
+    @apply mt-2 text-4xl font-bold;
   }
   .page-text-xl {
-    @apply text-xl font-semibold;
-  }
-  .page-header-1 {
-    @apply mt-2 text-2xl;
-  }
-  .page-header-2 {
-    @apply mt-2 text-xl indent-8;
+    @apply text-xl font-bold;
   }
 }
