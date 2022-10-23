@@ -7,10 +7,12 @@ export default function Header() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
 
   useEffect(() => {
     setMenuOpen(false);
     setAboutOpen(false);
+    setProjectsOpen(false);
   }, [router.pathname]);
 
   return (
@@ -19,12 +21,13 @@ export default function Header() {
         onMouseLeave={() => {
           setMenuOpen(false);
           setAboutOpen(false);
+          setProjectsOpen(false);
         }}
       >
         <div className="flex items-center justify-between shadow-lg rounded-lg">
           <Link href={"/"}>
             <a className="m-2 text-5xl font-Bangers text-theme hover:underline">
-              JB
+              Josh Brusa
             </a>
           </Link>
 
@@ -33,9 +36,9 @@ export default function Header() {
           </button>
         </div>
 
-        <div className="flex justify-end mt-2 ">
+        <div className="mt-2 flex justify-end">
           <div
-            className={`p-2 absolute flex flex-col justify-end w-60 shadow-lg rounded-lg bg-bg ${
+            className={`absolute flex flex-col justify-end w-60 shadow-lg rounded-lg bg-bg ${
               menuOpen ? null : "hidden"
             }`}
           >
@@ -54,6 +57,19 @@ export default function Header() {
               </Link>
               <Link href={"/about/contact"}>
                 <a className="menu-link">Contact</a>
+              </Link>
+            </div>
+            <button
+              onClick={() => setProjectsOpen(!projectsOpen)}
+              className="menu-folder"
+            >
+              Projects
+            </button>
+            <div className={`flex flex-col ${projectsOpen ? null : "hidden"}`}>
+              <Link href={"https://joshbrusa-stonks.vercel.app/"}>
+                <a target="_blank" className="menu-link">
+                  Stonks
+                </a>
               </Link>
             </div>
           </div>
