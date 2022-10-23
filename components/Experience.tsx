@@ -16,9 +16,8 @@ export default function Experience({
   return (
     <>
       <div className="mt-2 flex justify-between">
-        <div className="flex">
-          <div className="font-semibold">{role}</div>
-          <div>, {company}</div>
+        <div className="font-semibold">
+          {role}, {company}
         </div>
         <div>{duration}</div>
       </div>

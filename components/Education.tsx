@@ -16,9 +16,8 @@ export default function Education({
   return (
     <>
       <div className="mt-2 flex justify-between">
-        <div className="flex">
-          <div className="font-semibold">{school}</div>
-          <div>, {degree}</div>
+        <div className="font-semibold">
+          {school}, {degree}
         </div>
         <div>{duration}</div>
       </div>
