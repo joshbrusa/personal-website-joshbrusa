@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         theme: "#ff4040",
+        bg: "#fdfdfc",
       },
     },
   },

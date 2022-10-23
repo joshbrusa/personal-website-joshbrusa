@@ -9,6 +9,12 @@ body {
 }
 
 @layer components {
+  .menu-folder {
+    @apply m-2 text-start text-xl font-bold hover:underline;
+  }
+  .menu-link {
+    @apply m-2 indent-2 text-lg font-semibold hover:underline;
+  }
   .page-title {
     @apply mt-2 text-4xl font-bold;
   }
