@@ -7,9 +7,15 @@ export default function Page() {
       <Head>
         <title>joshbrusa.com</title>
       </Head>
-      <Link href={"/about/experience"}>
-        <a>About</a>
-      </Link>
+      <div className="flex flex-col justify-center items-center min-h-screen">
+        <div className="text-2xl font-bold">Hello!</div>
+        <div className="mt-2">
+          Welcome to my personal website. Use the following links below.
+        </div>
+        <Link href={"/about/experience"}>
+          <a className="index-link">About</a>
+        </Link>
+      </div>
     </>
   );
 }
