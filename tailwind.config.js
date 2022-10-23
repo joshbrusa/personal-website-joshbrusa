@@ -10,7 +10,6 @@ module.exports = {
         Bangers: ["Bangers", "cursive"],
       },
       colors: {
-        "theme-bg": "#fdfdfc",
         theme: "#ff4040",
       },
     },

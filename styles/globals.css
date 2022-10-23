@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #fdfdfc;
+}
+
 @layer components {
   .page-title {
     @apply mt-2 text-4xl font-bold;
