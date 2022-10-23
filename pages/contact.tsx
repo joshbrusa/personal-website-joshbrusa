@@ -12,8 +12,13 @@ export default function Page() {
       <div className="mt-2">joshbrusa@gmail.com</div>
       <div className="mt-2 page-text-xl">Socials:</div>
       <div className="mt-2">
-        <Link href="https://www.linkedin.com/in/joshbrusa">
+        <Link href="https://linkedin.com/in/joshbrusa">
           <a target="_blank">LinkedIn</a>
+        </Link>
+      </div>
+      <div className="mt-2">
+        <Link href="https://github.com/joshbrusa">
+          <a target="_blank">GitHub</a>
         </Link>
       </div>
     </>
