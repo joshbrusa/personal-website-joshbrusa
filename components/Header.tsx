@@ -1,13 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
+import {
+  Bars3BottomRightIcon,
+  ChevronRightIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/24/solid";
 
 export default function Header() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [projectsOpen, setProjectsOpen] = useState(false);
+
+  const menuRef = useRef<HTMLInputElement>(null);
+
+  if (typeof document !== "undefined") {
+    document.addEventListener("mousedown", (e) => {
+      if (!menuRef.current?.contains(e.target as Node)) {
+        handleMenuClose();
+      }
+    });
+  }
 
   function handleMenuClose() {
     setMenuOpen(false);
@@ -21,7 +35,7 @@ export default function Header() {
 
   return (
     <>
-      <div onMouseLeave={() => handleMenuClose()}>
+      <div ref={menuRef}>
         <div className="p-2 flex items-center justify-between shadow-lg rounded-lg">
           <Link href={"/"}>
             <a className="text-4xl font-Bangers text-theme hover:underline">
@@ -40,11 +54,15 @@ export default function Header() {
               menuOpen ? null : "hidden"
             }`}
           >
+            {/* about folder */}
             <button
               onClick={() => setAboutOpen(!aboutOpen)}
               className="menu-folder"
             >
-              About
+              <div className="w-4 h-4">
+                {aboutOpen ? <ChevronDownIcon /> : <ChevronRightIcon />}
+              </div>
+              <div className="ml-1">About</div>
             </button>
             <div className={`flex flex-col ${aboutOpen ? null : "hidden"}`}>
               <Link href={"/about/experience"}>
@@ -57,11 +75,16 @@ export default function Header() {
                 <a className="menu-link">Contact</a>
               </Link>
             </div>
+
+            {/* projects folder */}
             <button
               onClick={() => setProjectsOpen(!projectsOpen)}
               className="menu-folder"
             >
-              Projects
+              <div className="w-4 h-4">
+                {aboutOpen ? <ChevronDownIcon /> : <ChevronRightIcon />}
+              </div>
+              <div className="ml-1">Projects</div>
             </button>
             <div className={`flex flex-col ${projectsOpen ? null : "hidden"}`}>
               <Link href={"https://joshbrusa-stonks.vercel.app/"}>
